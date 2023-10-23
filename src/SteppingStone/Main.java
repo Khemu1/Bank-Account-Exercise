@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         BankAccount obj = new BankAccount();
-        System.out.println("Hello pleas Enter you Name, Number and you Balance");
+        System.out.println("Hello please Enter you Name, Number and you Balance");
         obj.setName(in.next());
         obj.setNumber(in.next());
         obj.setBalance(in.nextDouble());
