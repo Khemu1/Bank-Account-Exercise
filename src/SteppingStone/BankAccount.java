@@ -35,8 +35,13 @@ public class BankAccount {
     //
 
     void deposit(double money) {
-        this.balance+=money;
-        System.err.println("your bank account now contains "+this.balance);
+        if (money> 0)   {
+            this.balance+=money;
+            System.err.println("your bank account now contains "+this.balance);
+        }
+        else {
+            System.out.println("nothing have been deposited");
+        }
     }
     void withdraw(double money) {
         if (this.balance >=money)   {
